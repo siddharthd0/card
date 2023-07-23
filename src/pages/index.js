@@ -89,11 +89,7 @@ export default function Home() {
             alt="Siddharth Duggal"
           />
           <Box ml="1rem">
-            <Heading
-              mb={1}
-            
-              fontWeight={"400"}
-            >
+            <Heading mb={1} fontWeight={"400"}>
               Kaushal Kurpad
             </Heading>
           </Box>
