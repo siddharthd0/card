@@ -144,13 +144,31 @@ export default function Home() {
             alt="Siddharth Duggal"
           />
           <Box ml="1rem">
-            <Heading
-              mb={1}
-            
-              fontWeight={"400"}
+            <Tooltip
+              bg={"black"}
+              mb="1rem"
+              placement="top"
+              label="View my portfolio website"
             >
-              Kaushal Kurpad
-            </Heading>
+              <Link
+                _hover={{
+                  textDecoration: "none",
+                }}
+                href="https://siddharthduggal.com"
+              >
+                <Heading
+                  mb={1}
+                  transition={"all .2s ease-in-out"}
+                  _hover={{
+                    color: "whiteAlpha.700",
+                  }}
+                  fontWeight={"400"}
+                >
+                  Siddharth Duggal
+                </Heading>
+              </Link>
+            </Tooltip>
+            <SocialMediaIcons />
           </Box>
         </Flex>
 
