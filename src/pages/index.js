@@ -23,6 +23,61 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 
+const SocialMediaIcons = () => (
+  <>
+    <HStack spacing={3}>
+      <Tooltip label="Twitter" borderRadius="md" bg="gray.800">
+        <Link
+          _hover={{
+            color: "twitter.500 !important",
+          }}
+          href="https://twitter.com/siddharthd01"
+          isExternal
+          color="whiteAlpha.500"
+        >
+          <FaTwitter size={20} />
+        </Link>
+      </Tooltip>
+      <Tooltip label="Instagram" borderRadius="md" bg="gray.800">
+        <Link
+          _hover={{
+            color: "red.500 !important",
+          }}
+          href="https://www.instagram.com/siddharth.duggal/"
+          isExternal
+          color="whiteAlpha.500"
+        >
+          <FaInstagram size={20} />
+        </Link>
+      </Tooltip>
+
+      <Tooltip label="LinkedIn" borderRadius="md" bg="gray.800">
+        <Link
+          _hover={{
+            color: "linkedin.500 !important",
+          }}
+          href="https://www.linkedin.com/in/siddharth-duggal/"
+          isExternal
+          color="whiteAlpha.500"
+        >
+          <FaLinkedin size={20} />
+        </Link>
+      </Tooltip>
+      <Tooltip label="GitHub" borderRadius="md" bg="gray.800">
+        <Link
+          _hover={{
+            color: "gray.200 !important",
+          }}
+          href="https://github.com/siddharthd0"
+          isExternal
+          color="whiteAlpha.500"
+        >
+          <FaGithub size={20} />
+        </Link>
+      </Tooltip>
+    </HStack>
+  </>
+);
 const LinkButton = ({ name, url, icon }) => {
   return (
     <Link
@@ -85,11 +140,15 @@ export default function Home() {
             }}
             borderRadius="full"
             boxSize="70px"
-            src="kaush.png"
+            src="siddharth.jpeg"
             alt="Siddharth Duggal"
           />
           <Box ml="1rem">
-            <Heading mb={1} fontWeight={"400"}>
+            <Heading
+              mb={1}
+            
+              fontWeight={"400"}
+            >
               Kaushal Kurpad
             </Heading>
           </Box>
