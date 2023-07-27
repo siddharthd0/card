@@ -18,6 +18,7 @@ import {
   FaGithub,
   FaDiscord,
   FaTwitter,
+  FaPhoenixFramework,
   FaInstagram,
   FaLinkedin,
   FaTiktok,
@@ -173,6 +174,11 @@ export default function Home() {
         </Flex>
 
         <VStack spacing={5}>
+          <LinkButton
+            name="LifeAt Spaces (Productivity)"
+            url={"https://lifeat.io/"}
+            icon={<FaPhoenixFramework/>}
+            />
           <LinkButton
             name="Free Coding Courses"
             url="https://www.techoptimum.org"
