@@ -141,40 +141,24 @@ export default function Home() {
             }}
             borderRadius="full"
             boxSize="70px"
-            src="siddharth.jpeg"
-            alt="Siddharth Duggal"
+            src="carson.jpg"
+            alt=" Carson O'very"
           />
           <Box ml="1rem">
-            <Tooltip
-              bg={"black"}
-              mb="1rem"
-              placement="top"
-              label="View my portfolio website"
+            <Heading
+              mb={1}
+              transition={"all .2s ease-in-out"}
+              _hover={{
+                color: "whiteAlpha.700",
+              }}
+              fontWeight={"400"}
             >
-              <Link
-                _hover={{
-                  textDecoration: "none",
-                }}
-                href="https://siddharthduggal.com"
-              >
-                <Heading
-                  mb={1}
-                  transition={"all .2s ease-in-out"}
-                  _hover={{
-                    color: "whiteAlpha.700",
-                  }}
-                  fontWeight={"400"}
-                >
-               Carson O'very
-                </Heading>
-              </Link>
-            </Tooltip>
-      
+              Carson O'very
+            </Heading>
           </Box>
         </Flex>
 
         <VStack spacing={5}>
-        
           <LinkButton
             name="Free Coding Courses"
             url="https://www.techoptimum.org"
@@ -189,6 +173,11 @@ export default function Home() {
             name="Coding Community"
             url="https://discord.gg/HpRfm7kp3U"
             icon={<FaDiscord />}
+          />
+          <LinkButton
+            name="Tiktok"
+            url="https://tiktok.com/@carsonovery"
+            icon={<FaTiktok />}
           />
         </VStack>
       </Box>
