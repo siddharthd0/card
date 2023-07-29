@@ -130,7 +130,7 @@ export default function Home() {
         alignItems="center"
       >
         <Head>
-          <title>Links | Siddharth Duggal</title>
+          <title>Links | Carson O'very</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Flex mb={8} alignItems="center">
@@ -165,20 +165,16 @@ export default function Home() {
                   }}
                   fontWeight={"400"}
                 >
-                  Siddharth Duggal
+               Carson O'very
                 </Heading>
               </Link>
             </Tooltip>
-            <SocialMediaIcons />
+      
           </Box>
         </Flex>
 
         <VStack spacing={5}>
-          <LinkButton
-            name="LifeAt Spaces (Productivity)"
-            url={"https://lifeat.io/"}
-            icon={<FaPhoenixFramework/>}
-            />
+        
           <LinkButton
             name="Free Coding Courses"
             url="https://www.techoptimum.org"
