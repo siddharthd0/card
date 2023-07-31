@@ -141,8 +141,8 @@ export default function Home() {
             }}
             borderRadius="full"
             boxSize="70px"
-            src="carson.jpg"
-            alt=" Carson O'very"
+            src="siddharth.jpeg"
+           
           />
           <Box ml="1rem">
          
