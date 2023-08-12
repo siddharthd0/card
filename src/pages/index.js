@@ -169,6 +169,11 @@ export default function Home() {
         </Flex>
 
         <VStack spacing={5}>
+                     <LinkButton
+            name="Tech Optimum Hacks"
+            url="https://tech-optimum-hacks-2023.devpost.com"
+            icon={<FaOptinMonster />}
+          />
         
           <LinkButton
             name="Free Coding Courses"
