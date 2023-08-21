@@ -23,6 +23,7 @@ import {
   FaLinkedin,
   FaTiktok,
 } from "react-icons/fa";
+import { BiTime } from "react-icons/bi";
 
 const SocialMediaIcons = () => (
   <>
@@ -174,6 +175,14 @@ export default function Home() {
             url="https://tech-optimum-hacks-2023.devpost.com"
             icon={<FaOptinMonster />}
           />
+            <LinkButton
+            name="Micro Hackathons (Waitlist)"
+              url="https://wait.techoptimum.org"
+              icon={<BiTime/>}
+              />
+
+
+
         
           <LinkButton
             name="Free Coding Courses"
