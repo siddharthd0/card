@@ -23,6 +23,7 @@ import {
   FaLinkedin,
   FaTiktok,
 } from "react-icons/fa";
+import { BiTime } from "react-icons/bi";
 
 const SocialMediaIcons = () => (
   <>
@@ -169,14 +170,23 @@ export default function Home() {
         </Flex>
 
         <VStack spacing={5}>
-          <LinkButton
-            name="LifeAt Spaces (Productivity)"
-            url={"https://lifeat.io/"}
-            icon={<FaPhoenixFramework/>}
-            />
+                     <LinkButton
+            name="Tech Optimum Hacks"
+            url="https://tech-optimum-hacks-2023.devpost.com"
+            icon={<FaOptinMonster />}
+          />
+            <LinkButton
+            name="Micro Hackathons (Waitlist)"
+              url="https://wait.techoptimum.org"
+              icon={<BiTime/>}
+              />
+
+
+
+        
           <LinkButton
             name="Free Coding Courses"
-            url="https://www.techoptimum.org"
+            url="https://www.dashboard.techoptimum.org"
             icon={<FaOptinMonster />}
           />
           <LinkButton
@@ -185,15 +195,16 @@ export default function Home() {
             icon={<FaGithub />}
           />
           <LinkButton
-            name="Coding Community"
+            name="Coding Community (Discord)"
             url="https://discord.gg/HpRfm7kp3U"
             icon={<FaDiscord />}
           />
-          <LinkButton
-            name="Tiktok"
-            url="https://tiktok.com/@carsonovery"
-            icon={<FaTiktok />}
+                <LinkButton
+            name="Tech Optimum"
+            url="https://www.techoptimum.org"
+            icon={<FaOptinMonster />}
           />
+        
         </VStack>
       </Box>
     </>
