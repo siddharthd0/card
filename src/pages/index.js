@@ -21,6 +21,7 @@ import {
   FaPhoenixFramework,
   FaInstagram,
   FaLinkedin,
+  FaCode,
   FaTiktok,
 } from "react-icons/fa";
 import { BiTime } from "react-icons/bi";
@@ -90,15 +91,19 @@ const LinkButton = ({ name, url, icon }) => {
       isExternal
     >
       <Button
-        transition={"all .2s ease-in-out"}
-        bg="transparent"
-        border="1px solid"
-        borderColor="whiteAlpha.400"
-        color="whiteAlpha.900"
+        mb="1rem"
+        borderWidth="1px"
+        borderRadius="lg"
+        bg="#111"
+        borderColor="rgba(255,255,255,0)"
+        transition="all 0.25s ease"
         _hover={{
-          color: "black",
-          bg: "white",
+          bg: "black",
+          transform: "translateY(-5px)",
+          borderColor: "rgba(255,255,255,0.2)",
         }}
+        color="whiteAlpha.900"
+       
         size="lg"
         w="350px"
       >
@@ -123,7 +128,7 @@ export default function Home() {
     <>
       <Box
         minHeight="100vh"
-        bg={"rgb(22, 22, 22) "}
+        bg={"black"}
         color={color[colorMode]}
         display="flex"
         flexDirection="column"
@@ -132,7 +137,7 @@ export default function Home() {
       >
         <Head>
           <title>Links | Siddharth Duggal</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/siddharth.jpeg" />
         </Head>
         <Flex mb={8} alignItems="center">
           <Image
@@ -169,28 +174,18 @@ export default function Home() {
           </Box>
         </Flex>
 
-        <VStack spacing={5}>
-                     <LinkButton
-            name="Tech Optimum Hacks"
-            url="https://tech-optimum-hacks-2023.devpost.com"
-            icon={<FaOptinMonster />}
-          />
-            <LinkButton
-            name="Micro Hackathons (Waitlist)"
-              url="https://wait.techoptimum.org"
-              icon={<BiTime/>}
-              />
-
+        <VStack spacing={2}>
+                 
 
 
         
           <LinkButton
             name="Free Coding Courses"
             url="https://www.dashboard.techoptimum.org"
-            icon={<FaOptinMonster />}
+            icon={<FaCode />}
           />
           <LinkButton
-            name="2024 SWE Internships"
+            name="2024 Software Internships"
             url="https://github.com/TechOptimum/2024-swe-internships"
             icon={<FaGithub />}
           />
