@@ -100,10 +100,9 @@ const LinkButton = ({ name, url, icon }) => {
         _hover={{
           bg: "black",
           transform: "translateY(-5px)",
-          borderColor: "rgba(255,255,255,0.2)",
+          borderColor: "blue.700",
         }}
         color="whiteAlpha.900"
-       
         size="lg"
         w="350px"
       >
@@ -148,37 +147,31 @@ export default function Home() {
             borderRadius="full"
             boxSize="70px"
             src="siddharth.jpeg"
-           
           />
           <Box ml="1rem">
-         
-              <Link
+            <Link
+              _hover={{
+                textDecoration: "none",
+              }}
+              href="https://siddharthduggal.com"
+            >
+              <Heading
+                mb={1}
+                transition={"all .2s ease-in-out"}
                 _hover={{
-                  textDecoration: "none",
+                  color: "whiteAlpha.700",
                 }}
-                href="https://siddharthduggal.com"
+                fontWeight={"400"}
               >
-                <Heading
-                  mb={1}
-                  transition={"all .2s ease-in-out"}
-                  _hover={{
-                    color: "whiteAlpha.700",
-                  }}
-                  fontWeight={"400"}
-                >
-                  Siddharth Duggal
-                </Heading>
-              </Link>
-     
+                Siddharth Duggal
+              </Heading>
+            </Link>
+
             <SocialMediaIcons />
           </Box>
         </Flex>
 
         <VStack spacing={2}>
-                 
-
-
-        
           <LinkButton
             name="Free Coding Courses"
             url="https://www.dashboard.techoptimum.org"
@@ -194,12 +187,11 @@ export default function Home() {
             url="https://discord.gg/HpRfm7kp3U"
             icon={<FaDiscord />}
           />
-                <LinkButton
+          <LinkButton
             name="Tech Optimum"
             url="https://www.techoptimum.org"
             icon={<FaOptinMonster />}
           />
-        
         </VStack>
       </Box>
     </>
