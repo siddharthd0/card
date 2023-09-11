@@ -29,6 +29,19 @@ import { BiTime } from "react-icons/bi";
 const SocialMediaIcons = () => (
   <>
     <HStack spacing={3}>
+      <Tooltip label="TikTok" borderRadius="md" bg="gray.800">
+        <Link
+          _hover={{
+            color: "pink.500 !important",
+          }}
+          href="https://www.tiktok.com/@siddharthduggal_"
+          isExternal
+          color="whiteAlpha.500"
+        >
+          <FaTiktok size={20} />
+        </Link>
+      </Tooltip>
+
       <Tooltip label="Twitter" borderRadius="md" bg="gray.800">
         <Link
           _hover={{
@@ -41,6 +54,7 @@ const SocialMediaIcons = () => (
           <FaTwitter size={20} />
         </Link>
       </Tooltip>
+      
       <Tooltip label="Instagram" borderRadius="md" bg="gray.800">
         <Link
           _hover={{
@@ -94,8 +108,9 @@ const LinkButton = ({ name, url, icon }) => {
         mb="1rem"
         borderWidth="1px"
         borderRadius="lg"
-        bg="#111"
-        borderColor="rgba(255,255,255,0)"
+        bg="transparent"
+       
+        borderColor="rgba(255,255,255,0.3)"
         transition="all 0.25s ease"
         _hover={{
           bg: "black",
@@ -126,19 +141,24 @@ export default function Home() {
   return (
     <>
       <Box
-        minHeight="100vh"
-        bg={"black"}
-        color={color[colorMode]}
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
+       minHeight="100vh"
+       bg={"black"}
+       color={color[colorMode]}
+       backgroundImage="url('banner-social.svg')" // Set SVG background here
+       backgroundRepeat="no-repeat" // Additional background properties
+       backgroundSize="cover" // Additional background properties
+       display="flex"
+       flexDirection="column"
+       justifyContent="center"
+       alignItems="center"
       >
         <Head>
           <title>Links | Siddharth Duggal</title>
           <link rel="icon" href="/siddharth.jpeg" />
         </Head>
         <Flex mb={8} alignItems="center">
+         
+
           <Image
             transition={"all .2s ease-in-out"}
             _hover={{
@@ -149,6 +169,11 @@ export default function Home() {
             src="siddharth.jpeg"
           />
           <Box ml="1rem">
+            <Tooltip 
+              label="My Portfolio"
+              borderRadius="md"
+              bg="gray.800"
+            >
             <Link
               _hover={{
                 textDecoration: "none",
@@ -157,15 +182,16 @@ export default function Home() {
             >
               <Heading
                 mb={1}
-                transition={"all .2s ease-in-out"}
+                transition={"all .15s ease-in-out"}
                 _hover={{
-                  color: "whiteAlpha.700",
+                  color: "whiteAlpha.600",
                 }}
                 fontWeight={"400"}
               >
                 Siddharth Duggal
               </Heading>
             </Link>
+            </Tooltip>
 
             <SocialMediaIcons />
           </Box>
