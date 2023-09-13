@@ -108,7 +108,7 @@ const LinkButton = ({ name, url, icon }) => {
         mb="1rem"
         borderWidth="1px"
         borderRadius="lg"
-        bg="transparent"
+        bg="black" 
        
         borderColor="rgba(255,255,255,0.3)"
         transition="all 0.25s ease"
