@@ -198,6 +198,12 @@ export default function Home() {
         </Flex>
 
         <VStack spacing={2}>
+              <LinkButton
+            name="Practical Coding Projects"
+            url="https://github.com/practical-tutorials/project-based-learning"
+            icon={<FaCode />}
+          />
+          
           <LinkButton
             name="Free Coding Courses"
             url="https://www.dashboard.techoptimum.org"
