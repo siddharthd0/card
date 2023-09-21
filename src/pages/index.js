@@ -36,7 +36,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://www.tiktok.com/@siddharthduggal_"
           isExternal
-          color="whiteAlpha.500"
+          color="whiteAlpha.700"
         >
           <FaTiktok size={20} />
         </Link>
@@ -49,7 +49,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://twitter.com/siddharthd01"
           isExternal
-          color="whiteAlpha.500"
+          color="whiteAlpha.700"
         >
           <FaTwitter size={20} />
         </Link>
@@ -62,7 +62,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://www.instagram.com/siddharth.duggal/"
           isExternal
-          color="whiteAlpha.500"
+          color="whiteAlpha.700"
         >
           <FaInstagram size={20} />
         </Link>
@@ -75,7 +75,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://www.linkedin.com/in/siddharth-duggal/"
           isExternal
-          color="whiteAlpha.500"
+          color="whiteAlpha.700"
         >
           <FaLinkedin size={20} />
         </Link>
@@ -87,7 +87,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://github.com/siddharthd0"
           isExternal
-          color="whiteAlpha.500"
+          color="whiteAlpha.700"
         >
           <FaGithub size={20} />
         </Link>
@@ -156,7 +156,8 @@ export default function Home() {
           <title>Links | Siddharth Duggal</title>
           <link rel="icon" href="/siddharth.jpeg" />
         </Head>
-        <Flex mb={8} alignItems="center">
+        <Box mx="1rem !important" bg="black" px="1rem" py="1rem" borderRadius={"6px"}>
+        <Flex   px="1.4rem" pt="1rem" borderRadius={"10px"} bg="black" mb={8} alignItems="center">
          
 
           <Image
@@ -199,8 +200,8 @@ export default function Home() {
 
         <VStack spacing={2}>
               <LinkButton
-            name="Practical Coding Projects"
-            url="https://github.com/practical-tutorials/project-based-learning"
+            name="Unique Coding Project Ideas"
+            url="https://github.com/TechOptimum/project-ideas"
             icon={<FaCode />}
           />
           
@@ -225,6 +226,7 @@ export default function Home() {
             icon={<FaOptinMonster />}
           />
         </VStack>
+        </Box>
       </Box>
     </>
   );
