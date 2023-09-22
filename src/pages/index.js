@@ -36,7 +36,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://www.tiktok.com/@siddharthduggal_"
           isExternal
-          color="whiteAlpha.700"
+          color="blackAlpha.700"
         >
           <FaTiktok size={20} />
         </Link>
@@ -49,12 +49,12 @@ const SocialMediaIcons = () => (
           }}
           href="https://twitter.com/siddharthd01"
           isExternal
-          color="whiteAlpha.700"
+          color="blackAlpha.700"
         >
           <FaTwitter size={20} />
         </Link>
       </Tooltip>
-      
+
       <Tooltip label="Instagram" borderRadius="md" bg="gray.800">
         <Link
           _hover={{
@@ -62,7 +62,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://www.instagram.com/siddharth.duggal/"
           isExternal
-          color="whiteAlpha.700"
+          color="blackAlpha.700"
         >
           <FaInstagram size={20} />
         </Link>
@@ -75,7 +75,7 @@ const SocialMediaIcons = () => (
           }}
           href="https://www.linkedin.com/in/siddharth-duggal/"
           isExternal
-          color="whiteAlpha.700"
+          color="blackAlpha.700"
         >
           <FaLinkedin size={20} />
         </Link>
@@ -83,11 +83,11 @@ const SocialMediaIcons = () => (
       <Tooltip label="GitHub" borderRadius="md" bg="gray.800">
         <Link
           _hover={{
-            color: "gray.200 !important",
+            color: "gray.900 !important",
           }}
           href="https://github.com/siddharthd0"
           isExternal
-          color="whiteAlpha.700"
+          color="blackAlpha.700"
         >
           <FaGithub size={20} />
         </Link>
@@ -106,16 +106,17 @@ const LinkButton = ({ name, url, icon }) => {
     >
       <Button
         mb="1rem"
-        borderWidth="1px"
+        borderWidth="1.5px"
         borderRadius="lg"
-        bg="black" 
-       
-        borderColor="rgba(255,255,255,0.3)"
+        bg="blackAlpha.900"
+
         transition="all 0.25s ease"
         _hover={{
-          bg: "black",
+       
           transform: "translateY(-5px)",
-          borderColor: "blue.700",
+          bg: "whiteAlpha.900",
+          color: "blackAlpha.900",
+   
         }}
         color="whiteAlpha.900"
         size="lg"
@@ -141,91 +142,91 @@ export default function Home() {
   return (
     <>
       <Box
-       minHeight="100vh"
-       bg={"black"}
-       color={color[colorMode]}
-       backgroundImage="url('banner-social.svg')" // Set SVG background here
-       backgroundRepeat="no-repeat" // Additional background properties
-       backgroundSize="cover" // Additional background properties
-       display="flex"
-       flexDirection="column"
-       justifyContent="center"
-       alignItems="center"
+        minHeight="100vh"
+        color={color[colorMode]}
+        backgroundRepeat="no-repeat" // Additional background properties
+        backgroundSize="cover" // Additional background properties
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
       >
         <Head>
           <title>Links | Siddharth Duggal</title>
           <link rel="icon" href="/siddharth.jpeg" />
         </Head>
-        <Box mx="1rem !important" bg="black" px="1rem" py="1rem" borderRadius={"6px"}>
-        <Flex   px="1.4rem" pt="1rem" borderRadius={"10px"} bg="black" mb={8} alignItems="center">
-         
-
-          <Image
-            transition={"all .2s ease-in-out"}
-            _hover={{
-              transform: "scale(1.1)",
-            }}
-            borderRadius="full"
-            boxSize="70px"
-            src="siddharth.jpeg"
-          />
-          <Box ml="1rem">
-            <Tooltip 
-              label="My Portfolio"
-              borderRadius="md"
-              bg="gray.800"
-            >
-            <Link
+        <Box mx="1rem !important" px="1rem" py="1rem" borderRadius={"6px"}>
+          <Flex
+            px="1.4rem"
+            pt="1rem"
+            borderRadius={"10px"}
+            bg="whiteAlpha.50"
+            mb={8}
+            alignItems="center"
+          >
+            <Image
+              transition={"all .2s ease-in-out"}
               _hover={{
-                textDecoration: "none",
+                transform: "scale(1.1)",
               }}
-              href="https://siddharthduggal.com"
-            >
-              <Heading
-                mb={1}
-                transition={"all .15s ease-in-out"}
-                _hover={{
-                  color: "whiteAlpha.600",
-                }}
-                fontWeight={"400"}
-              >
-                Siddharth Duggal
-              </Heading>
-            </Link>
-            </Tooltip>
+              borderRadius="full"
+              boxSize="80px"
+              src="notion-siddharth.png"
+            />
+            <Box color="black" ml="1rem">
+              <Tooltip label="My Portfolio" borderRadius="md" bg="gray.800">
+                <Link
+                  _hover={{
+                    textDecoration: "none",
+                  }}
+                  href="https://siddharthduggal.com"
+                >
+                  <Heading
+                    mb={2}
+                    transition={"all .15s ease-in-out"}
+                    _hover={{
+                      color: "blackAlpha.600",
+                    }}
+                    fontWeight={"400"}
+                    fontSize={["2xl", "3xl"]}
+                  >
+                    Siddharth Duggal
+                  </Heading>
+                </Link>
+              </Tooltip>
 
-            <SocialMediaIcons />
-          </Box>
-        </Flex>
+              <SocialMediaIcons />
+            </Box>
+          </Flex>
 
-        <VStack spacing={2}>
-              <LinkButton
-            name="Unique Coding Project Ideas"
-            url="https://github.com/TechOptimum/project-ideas"
-            icon={<FaCode />}
-          />
-          
-          <LinkButton
-            name="Free Coding Courses"
-            url="https://www.dashboard.techoptimum.org"
-            icon={<FaCode />}
-          />
-          <LinkButton
-            name="2024 Software Internships"
-            url="https://github.com/TechOptimum/2024-swe-internships"
-            icon={<FaGithub />}
-          />
-          <LinkButton
-            name="Coding Community (Discord)"
-            url="https://discord.gg/HpRfm7kp3U"
-            icon={<FaDiscord />}
-          />
-          <LinkButton
-            name="Tech Optimum"
-            url="https://www.techoptimum.org"
-            icon={<FaOptinMonster />}
-          />
-        </VStack>
+          <VStack spacing={2}>
+            <LinkButton
+              name="Unique Coding Project Ideas"
+              url="https://github.com/TechOptimum/project-ideas"
+              icon={<FaCode />}
+            />
+
+            <LinkButton
+              name="Free Coding Courses"
+              url="https://www.dashboard.techoptimum.org"
+              icon={<FaCode />}
+            />
+            <LinkButton
+              name="2024 Software Internships"
+              url="https://github.com/TechOptimum/2024-swe-internships"
+              icon={<FaGithub />}
+            />
+            <LinkButton
+              name="Coding Community (Discord)"
+              url="https://discord.gg/HpRfm7kp3U"
+              icon={<FaDiscord />}
+            />
+            <LinkButton
+              name="Tech Optimum"
+              url="https://www.techoptimum.org"
+              icon={<FaOptinMonster />}
+            />
+          </VStack>
         </Box>
       </Box>
     </>
