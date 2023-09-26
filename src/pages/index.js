@@ -25,6 +25,7 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 import { BiTime } from "react-icons/bi";
+import { MdVolunteerActivism} from "react-icons/md";
 
 const SocialMediaIcons = () => (
   <>
@@ -205,7 +206,11 @@ export default function Home() {
               url="https://github.com/TechOptimum/project-ideas"
               icon={<FaCode />}
             />
-
+            <LinkButton
+              name="Volunteer with a tech nonprofit"
+              url="https://www.techoptimum.org/join-team"
+              icon={<MdVolunteerActivism/>}
+                    />
             <LinkButton
               name="Free Coding Courses"
               url="https://www.dashboard.techoptimum.org"
