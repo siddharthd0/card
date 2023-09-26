@@ -207,7 +207,7 @@ export default function Home() {
               icon={<FaCode />}
             />
             <LinkButton
-              name="Volunteer with a tech nonprofit"
+              name="Volunteer with a tech start-up"
               url="https://www.techoptimum.org/join-team"
               icon={<MdVolunteerActivism/>}
                     />
