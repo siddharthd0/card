@@ -21,6 +21,7 @@ import {
   FaPhoenixFramework,
   FaInstagram,
   FaLinkedin,
+  FaRobot,
   FaCode,
   FaTiktok,
 } from "react-icons/fa";
@@ -201,6 +202,10 @@ export default function Home() {
           </Flex>
 
           <VStack spacing={2}>
+            <LinkButton
+              name="AI Developer Tools"
+              url="https://github.com/TechOptimum/ai-dev-tools#programming-ai-tools"
+              icon={<FaRobot />}
             <LinkButton
               name="Unique Coding Project Ideas"
               url="https://github.com/TechOptimum/project-ideas"
