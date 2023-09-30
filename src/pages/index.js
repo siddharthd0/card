@@ -205,7 +205,8 @@ export default function Home() {
             <LinkButton
               name="AI Developer Tools"
               url="https://github.com/TechOptimum/ai-dev-tools#programming-ai-tools"
-              icon={<FaRobot />}
+              icon={<FaRobot />}/>
+
             <LinkButton
               name="Unique Coding Project Ideas"
               url="https://github.com/TechOptimum/project-ideas"
