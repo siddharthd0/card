@@ -22,6 +22,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaRobot,
+
   FaCode,
   FaTiktok,
 } from "react-icons/fa";
@@ -146,8 +147,8 @@ export default function Home() {
       <Box
         minHeight="100vh"
         color={color[colorMode]}
-        backgroundRepeat="no-repeat" // Additional background properties
-        backgroundSize="cover" // Additional background properties
+        backgroundRepeat="no-repeat" 
+        backgroundSize="cover" 
         display="flex"
         flexDirection="column"
         justifyContent="center"
@@ -203,10 +204,10 @@ export default function Home() {
 
           <VStack spacing={2}>
             <LinkButton
-              name="AI Developer Tools"
-              url="https://github.com/TechOptimum/ai-dev-tools#programming-ai-tools"
-              icon={<FaRobot />}/>
-
+              name="Get Notion Premium"
+              url="https://affiliate.notion.so/bqkcjrwks751"
+              icon={<FaRobot />}
+              />
             <LinkButton
               name="Unique Coding Project Ideas"
               url="https://github.com/TechOptimum/project-ideas"
@@ -221,11 +222,6 @@ export default function Home() {
               name="Free Coding Courses"
               url="https://www.dashboard.techoptimum.org"
               icon={<FaCode />}
-            />
-            <LinkButton
-              name="2024 Software Internships"
-              url="https://github.com/TechOptimum/2024-swe-internships"
-              icon={<FaGithub />}
             />
             <LinkButton
               name="Coding Community (Discord)"
